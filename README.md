@@ -18,7 +18,7 @@ public class Main {
                 "My power is " + car.getPower() + "\n" +
                 "My weight is " + car.getWeight() + "\n" +
                 "i'm " + car.getCarType());
-        //сделать вывод в консоль двигатель, заглушить и все такое.
+        //сделать вывод в консоль двигатель, заглушить и тд...
         car.getEngine().startEngine();
         car.startDrive();
         car.getWheel().rollWheel();
