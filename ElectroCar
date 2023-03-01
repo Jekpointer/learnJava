@@ -1,0 +1,20 @@
+public class ElectroCar extends Car implements Driveble {
+    public ElectroCar(String name, int power, int weight, CarType carType) {
+        super(name, power, weight, carType);
+    }
+    @Override //описать все методы интерфейса внутри этого класса, иначе будет ругаться компилятор
+    public void startDrive() {
+        System.out.println("I'm electro car - drive, BEEP!!");
+    }
+
+    @Override
+    public void stopDrive() {
+        System.out.println("i'm electro car - stop drive");
+
+    }
+
+    @Override
+    public Wheel getWheel() {
+        return super.getWheel();
+    }
+}
