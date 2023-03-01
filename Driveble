@@ -1,0 +1,4 @@
+public interface Driveble {
+    public void startDrive();
+    public void stopDrive();
+}
