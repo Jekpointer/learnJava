@@ -1,0 +1,5 @@
+public class Wheel {
+    public void rollWheel() {
+        System.out.println("roll wheel");
+    }
+}
