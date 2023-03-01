@@ -1,0 +1,83 @@
+public class Car implements Driveble {
+    private String name; //переменные
+    private int power; //variable
+    private int weight; //var
+    private Wheel wheel; // отдельный простой класс
+    private Engine engine; // отдельный простой класс
+    private CarType carType; // перечисление enumeration(enum)
+
+    public Car(String name, int power, int weight, CarType carType) { //конструктор, принимающий значения
+        this.name = name;
+        this.power = power;
+        this.weight = weight;
+        this.carType = carType;
+        this.wheel = new Wheel();
+        this.engine = new Engine();
+    }
+
+
+    public String getName() {
+        if (name == null) {
+            return "Unnamed";
+        }
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) { //модифицировали setter power
+        if (power < 0) {
+            System.out.println("Введите положительное значение");
+        }
+        this.power = Math.max(0, power); //минимальное возможное значение 0 или то, что вводят
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public Wheel getWheel() {
+        return wheel;
+    }
+
+    public void setWheel(Wheel wheel) {
+        this.wheel = wheel;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine() {
+        this.engine = engine;
+    }
+
+    public CarType getCarType() {
+        return carType;
+    }
+
+    public void setCarType(CarType carType) {
+        this.carType = carType;
+    }
+
+    @Override
+    public void startDrive() {
+
+    }
+
+    @Override
+    public void stopDrive() {
+
+    }
+
+}
