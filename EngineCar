@@ -1,0 +1,10 @@
+public class EngineCar extends Car {
+    public EngineCar(String name, int power, int weight, CarType carType) {
+        super(name, power, weight, carType);
+    }
+
+    @Override
+    public Engine getEngine() {
+        return super.getEngine();
+    }
+}
