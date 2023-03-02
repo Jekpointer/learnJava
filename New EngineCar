@@ -1,0 +1,25 @@
+public class EngineCar extends Car implements Engineble {
+    public EngineCar(String name, int power, int weight, CarType carType) {
+        super(name, power, weight, carType);
+    }
+
+    @Override
+    public void startEngine() {
+        System.out.println("Engine start");
+    }
+
+    @Override
+    public void stopEngine() {
+        System.out.println("Engine off \n");
+    }
+
+    @Override
+    public void startDrive() {
+        super.startDrive();
+    }
+
+    @Override
+    public void stopDrive() {
+        super.stopDrive();
+    }
+}
