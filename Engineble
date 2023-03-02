@@ -1,0 +1,4 @@
+public interface Engineble {
+    public void startEngine();
+    public void stopEngine();
+}
