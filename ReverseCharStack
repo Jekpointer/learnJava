@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Ex {
+        public static void reverseString(char[] s) {
+        Stack<Character> stack = new Stack<>(); //создаем пустой стэк строк
+        for (Character i : s) {                //заселяем стек
+            stack.push(i);
+        }
+        int index = 0;                       //начиная с первого символа
+        while (!stack.isEmpty()) {          //извлекать значения из стека, пока он не стане пустым
+            s[index++] = stack.pop();      //присваивать каждый элемент обратно к массиву
+        }
+    }
+    private static void reverse(String[] s) {
+    }
+        public static void main(String[] args){
+            String[] s = {"h", "e", "l", "l", "o"};
+            reverse(s);
+            System.out.println(Arrays.toString(s));
+        }
+}
